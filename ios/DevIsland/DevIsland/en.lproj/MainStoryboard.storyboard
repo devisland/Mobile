@@ -348,7 +348,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="devdaybg2.png" width="16" height="16"/>
+        <image name="devdaybg2.png" width="960" height="400"/>
     </resources>
     <classes>
         <class className="NSLayoutConstraint" superclassName="NSObject">
