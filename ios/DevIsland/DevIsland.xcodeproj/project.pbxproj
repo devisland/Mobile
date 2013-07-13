@@ -25,6 +25,7 @@
 		FC0CBB8B1792148E006E5E2F /* SpeakersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC0CBB8A1792148E006E5E2F /* SpeakersViewController.m */; };
 		FC0CBB8F179214AB006E5E2F /* SpeakerCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = FC0CBB8E179214AB006E5E2F /* SpeakerCellView.m */; };
 		FC0CBB92179214B9006E5E2F /* Speaker.m in Sources */ = {isa = PBXBuildFile; fileRef = FC0CBB91179214B9006E5E2F /* Speaker.m */; };
+		FC0CBB9617921B87006E5E2F /* devdaybg2.png in Resources */ = {isa = PBXBuildFile; fileRef = FC0CBB9517921B87006E5E2F /* devdaybg2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		FC0CBB8E179214AB006E5E2F /* SpeakerCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpeakerCellView.m; sourceTree = "<group>"; };
 		FC0CBB90179214B9006E5E2F /* Speaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Speaker.h; sourceTree = "<group>"; };
 		FC0CBB91179214B9006E5E2F /* Speaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Speaker.m; sourceTree = "<group>"; };
+		FC0CBB9517921B87006E5E2F /* devdaybg2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = devdaybg2.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 		FC0CBB521792144B006E5E2F /* DevIsland */ = {
 			isa = PBXGroup;
 			children = (
+				FC0CBB9317921B60006E5E2F /* Resource */,
 				FC0CBB8817921461006E5E2F /* Model */,
 				FC0CBB8717921459006E5E2F /* Controllers */,
 				FC0CBB5B1792144B006E5E2F /* AppDelegate.h */,
@@ -192,6 +195,22 @@
 				FC0CBB8E179214AB006E5E2F /* SpeakerCellView.m */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		FC0CBB9317921B60006E5E2F /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				FC0CBB9417921B6E006E5E2F /* Image */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
+		FC0CBB9417921B6E006E5E2F /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				FC0CBB9517921B87006E5E2F /* devdaybg2.png */,
+			);
+			name = Image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,6 +289,7 @@
 				FC0CBB611792144B006E5E2F /* Default@2x.png in Resources */,
 				FC0CBB631792144B006E5E2F /* Default-568h@2x.png in Resources */,
 				FC0CBB661792144B006E5E2F /* MainStoryboard.storyboard in Resources */,
+				FC0CBB9617921B87006E5E2F /* devdaybg2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -489,6 +509,7 @@
 				FC0CBB831792144B006E5E2F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FC0CBB841792144B006E5E2F /* Build configuration list for PBXNativeTarget "DevIslandTests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +518,7 @@
 				FC0CBB861792144B006E5E2F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
