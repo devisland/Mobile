@@ -10,5 +10,6 @@
 
 @interface SpeakersViewController : UICollectionViewController
 
+-(void)prepareSpeaker;
 
 @end

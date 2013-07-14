@@ -371,10 +371,10 @@
             </objects>
             <point key="canvasLocation" x="500" y="509"/>
         </scene>
-        <!--View Controller-->
+        <!--Schedule View Controller-->
         <scene sceneID="e9l-go-gNc">
             <objects>
-                <viewController id="0eg-hI-Kk7" sceneMemberID="viewController">
+                <viewController id="0eg-hI-Kk7" customClass="ScheduleViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zqc-xa-vsI">
                         <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -390,15 +390,28 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Programação será liberada após dia 29 de Julho" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="GNx-JU-rUA">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="168" id="wIC-b6-Wlo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="31"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="oAY-vO-UKv" firstAttribute="trailing" secondItem="zqc-xa-vsI" secondAttribute="trailing" type="default" id="Q7Z-Er-68Z"/>
                             <constraint firstItem="oAY-vO-UKv" firstAttribute="top" secondItem="zqc-xa-vsI" secondAttribute="top" type="default" id="WEw-P2-WBW"/>
+                            <constraint firstItem="GNx-JU-rUA" firstAttribute="top" secondItem="zqc-xa-vsI" secondAttribute="top" constant="152" id="cMA-XB-Sbs"/>
                             <constraint firstItem="oAY-vO-UKv" firstAttribute="leading" secondItem="zqc-xa-vsI" secondAttribute="leading" type="default" id="pRJ-fO-MFd"/>
+                            <constraint firstItem="GNx-JU-rUA" firstAttribute="leading" secondItem="zqc-xa-vsI" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="tfw-q7-K59"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="infoLabel" destination="GNx-JU-rUA" id="NeA-Of-kyJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RPi-nu-zbh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -460,50 +473,12 @@
     <resources>
         <image name="devdaybg2.png" width="960" height="400"/>
     </resources>
-    <classes>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="SpeakerCellView" superclassName="UICollectionViewCell">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SpeakerCellView.h"/>
-            <relationships>
-                <relationship kind="outlet" name="nameLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="photo" candidateClass="UIImageView"/>
-            </relationships>
-        </class>
-        <class className="SpeakerInfoViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SpeakerInfoViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="bioText" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="nameLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="photo" candidateClass="UIImageView"/>
-            </relationships>
-        </class>
-        <class className="SpeakersViewController" superclassName="UICollectionViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SpeakersViewController.h"/>
-        </class>
-        <class className="UICollectionReusableView" superclassName="UIView">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionReusableView.h"/>
-        </class>
-        <class className="UICollectionViewCell" superclassName="UICollectionReusableView">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewCell.h"/>
-        </class>
-        <class className="UICollectionViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewController.h"/>
-        </class>
-        <class className="UICollectionViewFlowLayout" superclassName="UICollectionViewLayout">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewFlowLayout.h"/>
-        </class>
-        <class className="UICollectionViewLayout" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewLayout.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="7zR-D7-J3A"/>
+        <segue reference="AFp-61-aJD"/>
     </inferredMetricsTieBreakers>
 </document>

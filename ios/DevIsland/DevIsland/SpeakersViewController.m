@@ -32,21 +32,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    NSString *url = [NSString stringWithFormat:@"http://devday.devisland.com/assets/json/speakers.json"];
-    NSData *jsonData = [NSData dataWithContentsOfURL: [NSURL URLWithString:url]];
-    
-    NSError* error;
-    NSDictionary *jsonSpeakers = [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingMutableContainers error:&error];
-    arrayOfSpeakers = [[NSMutableArray alloc] initWithCapacity: 30];
-    
-    //Load Json Speakers 
-    if(!error) {
-        for(id jsonSpeaker in jsonSpeakers) {
-            Speaker *speaker = [Speaker FromDictonary:jsonSpeaker];
-            [ arrayOfSpeakers addObject: speaker];                      
-        }
-    }
+    [self preparSpeaker];
 }
 
 -(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView{
@@ -92,6 +78,24 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void) preparSpeaker
+{
+    NSString *url = [NSString stringWithFormat:@"http://devday.devisland.com/assets/json/speakers.json"];
+    NSData *jsonData = [NSData dataWithContentsOfURL: [NSURL URLWithString:url]];
+    
+    NSError* error;
+    NSDictionary *jsonSpeakers = [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingMutableContainers error:&error];
+    arrayOfSpeakers = [[NSMutableArray alloc] initWithCapacity: 30];
+    
+    //Load Json Speakers
+    if(!error) {
+        for(id jsonSpeaker in jsonSpeakers) {
+            Speaker *speaker = [Speaker FromDictonary:jsonSpeaker];
+            [ arrayOfSpeakers addObject: speaker];
+        }
+    }
 }
 
 @end

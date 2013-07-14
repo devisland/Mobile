@@ -28,6 +28,7 @@
 		FC0CBB9617921B87006E5E2F /* devdaybg2.png in Resources */ = {isa = PBXBuildFile; fileRef = FC0CBB9517921B87006E5E2F /* devdaybg2.png */; };
 		FC0CBB9C1792398C006E5E2F /* SpeakerInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC0CBB9B1792398C006E5E2F /* SpeakerInfoViewController.m */; };
 		FCC838A81792541500F452FA /* logoDevIsland.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FCC838A71792541500F452FA /* logoDevIsland.jpg */; };
+		FCC838AB179257C100F452FA /* ScheduleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCC838AA179257C100F452FA /* ScheduleViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,8 @@
 		FC0CBB9A1792398C006E5E2F /* SpeakerInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpeakerInfoViewController.h; sourceTree = "<group>"; };
 		FC0CBB9B1792398C006E5E2F /* SpeakerInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpeakerInfoViewController.m; sourceTree = "<group>"; };
 		FCC838A71792541500F452FA /* logoDevIsland.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = logoDevIsland.jpg; sourceTree = "<group>"; };
+		FCC838A9179257C100F452FA /* ScheduleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleViewController.h; sourceTree = "<group>"; };
+		FCC838AA179257C100F452FA /* ScheduleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +186,8 @@
 				FC0CBB8A1792148E006E5E2F /* SpeakersViewController.m */,
 				FC0CBB9A1792398C006E5E2F /* SpeakerInfoViewController.h */,
 				FC0CBB9B1792398C006E5E2F /* SpeakerInfoViewController.m */,
+				FCC838A9179257C100F452FA /* ScheduleViewController.h */,
+				FCC838AA179257C100F452FA /* ScheduleViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -339,6 +344,7 @@
 				FC0CBB8F179214AB006E5E2F /* SpeakerCellView.m in Sources */,
 				FC0CBB92179214B9006E5E2F /* Speaker.m in Sources */,
 				FC0CBB9C1792398C006E5E2F /* SpeakerInfoViewController.m in Sources */,
+				FCC838AB179257C100F452FA /* ScheduleViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
