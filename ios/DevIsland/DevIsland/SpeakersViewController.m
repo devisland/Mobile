@@ -6,10 +6,11 @@
 //  Copyright (c) 2013 Gibran Silva. All rights reserved.
 //
 
+#import <QuartzCore/QuartzCore.h>
 #import "SpeakersViewController.h"
 #import "Speaker.h"
 #import "SpeakerCellView.h"
-#import <QuartzCore/QuartzCore.h>
+#import "SpeakerInfoViewController.h"
 
 @interface SpeakersViewController ()
 {
@@ -73,6 +74,18 @@
     speakerCell.photo.layer.masksToBounds = NO;
     
     return speakerCell;
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    
+    if ([segue.identifier isEqualToString:@"SpeakerInfo"]){
+        SpeakerCellView *speakerCell = (SpeakerCellView *)sender;
+        NSIndexPath *index = [self.collectionView indexPathForCell:speakerCell];
+        Speaker *speaker = [arrayOfSpeakers objectAtIndex:index.item];
+        
+        SpeakerInfoViewController *controller = (SpeakerInfoViewController *)[segue destinationViewController];
+        controller.speaker = speaker;
+    }
 }
 
 - (void)didReceiveMemoryWarning
