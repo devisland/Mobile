@@ -9,6 +9,7 @@
 #import "SpeakersViewController.h"
 #import "Speaker.h"
 #import "SpeakerCellView.h"
+#import <QuartzCore/QuartzCore.h>
 
 @interface SpeakersViewController ()
 {
@@ -30,7 +31,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    NSLog(@"viewdidLoad");
     
     NSString *url = [NSString stringWithFormat:@"http://devday.devisland.com/assets/json/speakers.json"];
     NSData *jsonData = [NSData dataWithContentsOfURL: [NSURL URLWithString:url]];
@@ -43,20 +43,17 @@
     if(!error) {
         for(id jsonSpeaker in jsonSpeakers) {
             Speaker *speaker = [Speaker FromDictonary:jsonSpeaker];
-            [ arrayOfSpeakers addObject: speaker];            
-            NSLog(@"Speaker: %@", speaker.name);            
+            [ arrayOfSpeakers addObject: speaker];                      
         }
-        
-        NSLog(@"Total de speakers: %i", arrayOfSpeakers.count);
     }
 }
 
 -(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView{
-    return 1;
+    return arrayOfSpeakers.count / 2;
 }
 
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
-    return arrayOfSpeakers.count;
+    return 2;
 }
 
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath: (NSIndexPath *)indexPath{
@@ -69,6 +66,11 @@
     
     [[speakerCell photo] setImage:[[UIImage alloc] initWithData:data]];
     [[speakerCell nameLabel] setText: speaker.name];
+    
+    speakerCell.photo.layer.shadowColor = [UIColor blackColor].CGColor;
+    speakerCell.photo.layer.shadowOpacity = 0.5f;
+    speakerCell.photo.layer.shadowOffset = CGSizeMake(3.0f, 3.0f);
+    speakerCell.photo.layer.masksToBounds = NO;
     
     return speakerCell;
 }

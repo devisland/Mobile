@@ -7,6 +7,7 @@
 //
 
 #import "SpeakerCellView.h"
+#import <QuartzCore/QuartzCore.h>
 
 @implementation SpeakerCellView
 

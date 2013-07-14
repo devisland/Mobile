@@ -58,7 +58,7 @@
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <connections>
-                                            <segue destination="mY4-Yi-r2P" kind="modal" id="mD7-Mr-lrc"/>
+                                            <segue destination="mY4-Yi-r2P" kind="modal" id="bMa-Ah-Ggt"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="qq9-VK-zmS" style="IBUITableViewCellStyleDefault" id="IfQ-uv-6sX">
@@ -151,65 +151,65 @@
             </objects>
             <point key="canvasLocation" x="-686" y="134"/>
         </scene>
-        <!--Speakers View Controller - Palestrantes-->
+        <!--Speakers View Controller-->
         <scene sceneID="RJD-XK-p0A">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oiE-tq-lpW" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="mY4-Yi-r2P" customClass="SpeakersViewController" sceneMemberID="viewController">
                     <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="chZ-Y9-DyU">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ZOE-aa-dGA">
-                            <size key="itemSize" width="137" height="157"/>
+                            <size key="itemSize" width="149" height="143"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Speaker" id="Gc2-Fv-dyz" customClass="SpeakerCellView">
-                                <rect key="frame" x="0.0" y="0.0" width="137" height="157"/>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Speaker" id="nAt-Ya-7H6" customClass="SpeakerCellView">
+                                <rect key="frame" x="0.0" y="0.0" width="149" height="143"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="137" height="157"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="149" height="143"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F2v-7D-4YT">
+                                        <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nem-vS-3FG">
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="124" id="8BZ-Cu-JkE"/>
+                                                <constraint firstAttribute="width" constant="140" id="fbK-KF-xIQ"/>
+                                                <constraint firstAttribute="height" constant="115" id="jeP-Ji-JJ6"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mFZ-jj-HP8">
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K69-hy-9na">
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="jOT-hE-quE"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
+                                            <size key="shadowOffset" width="0.0" height="1"/>
                                         </label>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="F2v-7D-4YT" firstAttribute="top" secondItem="Gc2-Fv-dyz" secondAttribute="top" type="default" id="7PV-2I-k1g"/>
-                                    <constraint firstAttribute="bottom" secondItem="mFZ-jj-HP8" secondAttribute="bottom" constant="9" id="JDd-2i-cLh"/>
-                                    <constraint firstItem="F2v-7D-4YT" firstAttribute="leading" secondItem="Gc2-Fv-dyz" secondAttribute="leading" type="default" id="Q5U-7r-7hA"/>
-                                    <constraint firstItem="F2v-7D-4YT" firstAttribute="trailing" secondItem="Gc2-Fv-dyz" secondAttribute="trailing" type="default" id="VhO-DV-DAq"/>
-                                    <constraint firstItem="mFZ-jj-HP8" firstAttribute="centerX" secondItem="F2v-7D-4YT" secondAttribute="centerX" type="default" id="wqF-yI-bbG"/>
+                                    <constraint firstItem="K69-hy-9na" firstAttribute="leading" secondItem="nem-vS-3FG" secondAttribute="leading" type="default" id="45Z-nA-nYH"/>
+                                    <constraint firstItem="nem-vS-3FG" firstAttribute="top" secondItem="nAt-Ya-7H6" secondAttribute="top" constant="5" id="8bv-6t-U3g"/>
+                                    <constraint firstAttribute="bottom" secondItem="K69-hy-9na" secondAttribute="bottom" constant="2" id="FAA-Ct-5Xv"/>
+                                    <constraint firstItem="K69-hy-9na" firstAttribute="trailing" secondItem="nem-vS-3FG" secondAttribute="trailing" type="default" id="IVv-of-dLW"/>
+                                    <constraint firstItem="K69-hy-9na" firstAttribute="centerX" secondItem="nAt-Ya-7H6" secondAttribute="centerX" type="default" id="WwI-Xc-d83"/>
                                 </constraints>
+                                <size key="customSize" width="149" height="143"/>
                                 <connections>
-                                    <outlet property="nameLabel" destination="mFZ-jj-HP8" id="AqC-Es-Cpk"/>
-                                    <outlet property="photo" destination="F2v-7D-4YT" id="GLT-6k-1IC"/>
+                                    <outlet property="nameLabel" destination="K69-hy-9na" id="AZ2-HY-zlZ"/>
+                                    <outlet property="photo" destination="nem-vS-3FG" id="dDK-1f-zEn"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
                     </collectionView>
-                    <navigationItem key="navigationItem" title="Palestrantes" id="ux8-jY-ZYY">
-                        <barButtonItem key="leftBarButtonItem" title="Back" id="rl3-aL-86v">
-                            <connections>
-                                <segue destination="R6m-c1-2gm" kind="modal" id="gKH-Dh-QXr"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="oiE-tq-lpW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="500" y="-173"/>
         </scene>
@@ -350,42 +350,12 @@
     <resources>
         <image name="devdaybg2.png" width="960" height="400"/>
     </resources>
-    <classes>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="SpeakerCellView" superclassName="UICollectionViewCell">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SpeakerCellView.h"/>
-            <relationships>
-                <relationship kind="outlet" name="nameLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="photo" candidateClass="UIImageView"/>
-            </relationships>
-        </class>
-        <class className="SpeakersViewController" superclassName="UICollectionViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SpeakersViewController.h"/>
-        </class>
-        <class className="UICollectionReusableView" superclassName="UIView">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionReusableView.h"/>
-        </class>
-        <class className="UICollectionViewCell" superclassName="UICollectionReusableView">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewCell.h"/>
-        </class>
-        <class className="UICollectionViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewController.h"/>
-        </class>
-        <class className="UICollectionViewFlowLayout" superclassName="UICollectionViewLayout">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewFlowLayout.h"/>
-        </class>
-        <class className="UICollectionViewLayout" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewLayout.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="o4O-3Q-lCW"/>
+        <segue reference="AFp-61-aJD"/>
     </inferredMetricsTieBreakers>
 </document>
