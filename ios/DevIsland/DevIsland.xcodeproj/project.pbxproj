@@ -29,6 +29,8 @@
 		FC0CBB9C1792398C006E5E2F /* SpeakerInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC0CBB9B1792398C006E5E2F /* SpeakerInfoViewController.m */; };
 		FCC838A81792541500F452FA /* logoDevIsland.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FCC838A71792541500F452FA /* logoDevIsland.jpg */; };
 		FCC838AB179257C100F452FA /* ScheduleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCC838AA179257C100F452FA /* ScheduleViewController.m */; };
+		FCC838AE1792608400F452FA /* LocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCC838AD1792608400F452FA /* LocationViewController.m */; };
+		FCC838B0179260E900F452FA /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCC838AF179260E900F452FA /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +76,9 @@
 		FCC838A71792541500F452FA /* logoDevIsland.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = logoDevIsland.jpg; sourceTree = "<group>"; };
 		FCC838A9179257C100F452FA /* ScheduleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleViewController.h; sourceTree = "<group>"; };
 		FCC838AA179257C100F452FA /* ScheduleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleViewController.m; sourceTree = "<group>"; };
+		FCC838AC1792608400F452FA /* LocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationViewController.h; sourceTree = "<group>"; };
+		FCC838AD1792608400F452FA /* LocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationViewController.m; sourceTree = "<group>"; };
+		FCC838AF179260E900F452FA /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCC838B0179260E900F452FA /* MapKit.framework in Frameworks */,
 				FC0CBB4D1792144B006E5E2F /* UIKit.framework in Frameworks */,
 				FC0CBB4F1792144B006E5E2F /* Foundation.framework in Frameworks */,
 				FC0CBB511792144B006E5E2F /* CoreGraphics.framework in Frameworks */,
@@ -103,6 +109,7 @@
 		FC0CBB401792144B006E5E2F = {
 			isa = PBXGroup;
 			children = (
+				FCC838AF179260E900F452FA /* MapKit.framework */,
 				FC0CBB521792144B006E5E2F /* DevIsland */,
 				FC0CBB761792144B006E5E2F /* DevIslandTests */,
 				FC0CBB4B1792144B006E5E2F /* Frameworks */,
@@ -188,6 +195,8 @@
 				FC0CBB9B1792398C006E5E2F /* SpeakerInfoViewController.m */,
 				FCC838A9179257C100F452FA /* ScheduleViewController.h */,
 				FCC838AA179257C100F452FA /* ScheduleViewController.m */,
+				FCC838AC1792608400F452FA /* LocationViewController.h */,
+				FCC838AD1792608400F452FA /* LocationViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -345,6 +354,7 @@
 				FC0CBB92179214B9006E5E2F /* Speaker.m in Sources */,
 				FC0CBB9C1792398C006E5E2F /* SpeakerInfoViewController.m in Sources */,
 				FCC838AB179257C100F452FA /* ScheduleViewController.m in Sources */,
+				FCC838AE1792608400F452FA /* LocationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
