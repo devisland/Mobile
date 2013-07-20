@@ -147,17 +147,17 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ZOE-aa-dGA">
-                            <size key="itemSize" width="149" height="143"/>
+                            <size key="itemSize" width="154" height="183"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Speaker" id="nAt-Ya-7H6" customClass="SpeakerCellView">
-                                <rect key="frame" x="0.0" y="0.0" width="149" height="143"/>
+                                <rect key="frame" x="0.0" y="0.0" width="154" height="183"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="149" height="143"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="154" height="183"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K69-hy-9na">
@@ -171,7 +171,7 @@
                                         </label>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T1V-dk-XNO">
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="115" id="2W0-rn-ua0"/>
+                                                <constraint firstAttribute="height" constant="140" id="4BR-ki-r8m"/>
                                                 <constraint firstAttribute="width" constant="140" id="KaV-Hp-RHJ"/>
                                             </constraints>
                                         </imageView>
@@ -180,13 +180,13 @@
                                 </view>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="T1V-dk-XNO" secondAttribute="bottom" constant="20" type="default" id="8Wt-Hw-4jT"/>
-                                    <constraint firstAttribute="bottom" secondItem="K69-hy-9na" secondAttribute="bottom" constant="2" id="C7b-Vg-PJy"/>
                                     <constraint firstItem="K69-hy-9na" firstAttribute="leading" secondItem="T1V-dk-XNO" secondAttribute="leading" type="default" id="HEh-Yy-oXS"/>
                                     <constraint firstItem="T1V-dk-XNO" firstAttribute="leading" secondItem="nAt-Ya-7H6" secondAttribute="leading" constant="5" id="ayV-er-O30"/>
+                                    <constraint firstAttribute="bottom" secondItem="K69-hy-9na" secondAttribute="bottom" constant="6" id="pqp-YN-ivV"/>
                                     <constraint firstItem="T1V-dk-XNO" firstAttribute="trailing" secondItem="K69-hy-9na" secondAttribute="trailing" type="default" id="wMk-L4-9WY"/>
+                                    <constraint firstItem="T1V-dk-XNO" firstAttribute="top" secondItem="nAt-Ya-7H6" secondAttribute="top" constant="8" id="waY-33-azW"/>
                                 </constraints>
-                                <size key="customSize" width="149" height="143"/>
+                                <size key="customSize" width="154" height="183"/>
                                 <connections>
                                     <outlet property="nameLabel" destination="K69-hy-9na" id="AZ2-HY-zlZ"/>
                                     <outlet property="photo" destination="T1V-dk-XNO" id="qSr-8M-ed2"/>
@@ -226,8 +226,8 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fOj-jt-5Bg">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="164" id="SuT-pV-G9w"/>
-                                    <constraint firstAttribute="width" constant="166" id="snp-UP-No1"/>
+                                    <constraint firstAttribute="height" constant="160" id="Ftt-Lt-Cnf"/>
+                                    <constraint firstAttribute="width" constant="160" id="tf7-02-Sbd"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nTj-zE-hSo">
@@ -252,10 +252,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="nTj-zE-hSo" firstAttribute="top" secondItem="T9O-Ot-URH" secondAttribute="top" constant="178" id="5kS-Uz-c27"/>
                             <constraint firstItem="2t7-ON-AYT" firstAttribute="leading" secondItem="T9O-Ot-URH" secondAttribute="leading" type="default" id="7xl-Ns-LiF"/>
                             <constraint firstItem="nTj-zE-hSo" firstAttribute="leading" secondItem="fOj-jt-5Bg" secondAttribute="leading" type="default" id="RvK-65-2Pe"/>
                             <constraint firstItem="fOj-jt-5Bg" firstAttribute="top" secondItem="T9O-Ot-URH" secondAttribute="top" constant="6" id="WdY-k0-nb1"/>
-                            <constraint firstItem="nTj-zE-hSo" firstAttribute="top" secondItem="fOj-jt-5Bg" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="aBa-ux-e8E"/>
                             <constraint firstItem="2t7-ON-AYT" firstAttribute="centerX" secondItem="nTj-zE-hSo" secondAttribute="centerX" type="default" id="jJx-Xo-K5a"/>
                             <constraint firstItem="2t7-ON-AYT" firstAttribute="top" secondItem="T9O-Ot-URH" secondAttribute="top" constant="211" id="yhd-nT-ii6"/>
                         </constraints>
@@ -530,6 +530,9 @@
         <class className="UICollectionViewFlowLayout" superclassName="UICollectionViewLayout">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewFlowLayout.h"/>
         </class>
+        <class className="UICollectionViewLayout" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewLayout.h"/>
+        </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
@@ -537,6 +540,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="o4O-3Q-lCW"/>
+        <segue reference="fS9-cX-dI9"/>
     </inferredMetricsTieBreakers>
 </document>
